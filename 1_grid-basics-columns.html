@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics and Columns</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+
+        .item {
+            padding: 3rem;
+            border: 1px solid black;
+            background: light-gray;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <main>
+        <section>
+            <h3>Welcome to my Site</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae suscipit ex voluptate facilis,
+                laudantium dicta veniam eaque, perferendis nesciunt, reprehenderit quam corporis fugiat eum hic officiis
+                ea aliquid labore! Aliquid.</p>
+            <aside>
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae vel eos quos laborum tenetur
+                    excepturi laboriosam consectetur ipsa modi.</p>
+            </aside>
+        </section>
+    </main>
+</body>
+
+</html>
